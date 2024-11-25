@@ -6,9 +6,3 @@
 
 
 
-
-  [[redirects]]
-  from = "https://stats.magmatranslation.com/*"
-  to = "https://magmatranslation.com/stats/:splat"
-  status = 301
-  force = true
