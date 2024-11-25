@@ -8,6 +8,8 @@
         <meta name="description" content="Descubra as principais estatísticas do Instagram em 2024 e como elas podem impactar sua estratégia de marketing. Leia mais!">
         <meta name="author" content="Your Name or Company">
         <title>Estatísticas do Instagram em 2024: O Que Saber</title>
+        <!-- Canonical Link -->
+        <link rel="canonical" href="https://magmatranslation.com/stats/" />
         <!-- Link to External CSS -->
         <link rel="stylesheet" href="css/hero_style.css">
         <link rel="stylesheet" href="css/body_style.css">
@@ -35,7 +37,6 @@
                 <p>Written by Turian Biel</p>
             </div>
             <div class="hero-image-container">
-
                 <img src="https://res.cloudinary.com/dqza3l5hm/image/upload/v1732215345/turian_hd_yazxmo.png" alt="Hero Image" class="main-image"> 
             </div>
         </div>
@@ -693,20 +694,17 @@
   <div class="copyright">© All Rights Reserved to Magma Translation</div>
 </footer>
 
+<script>
+    const imageContainer = document.getElementById('imageContainer');
+    
+    imageContainer.addEventListener('mouseenter', () => {
+        imageContainer.style.transform = 'translateX(-100px) scale(1.05)';
+    });
 
-
-
-    <script>
-        const imageContainer = document.getElementById('imageContainer');
-        
-        imageContainer.addEventListener('mouseenter', () => {
-            imageContainer.style.transform = 'translateX(-100px) scale(1.05)';
-        });
-
-        imageContainer.addEventListener('mouseleave', () => {
-            imageContainer.style.transform = 'translateX(0px) scale(1)';
-        });
-    </script>
+    imageContainer.addEventListener('mouseleave', () => {
+        imageContainer.style.transform = 'translateX(0px) scale(1)';
+    });
+</script>
 
 </body>
 </html>
