@@ -505,8 +505,18 @@ body {
         text-align: left;
     }
 
-    .text-container h1 {
-        font-size: 1em;
+
+    .hero-text-container {
+
+        border-radius: 1px;
+        margin-right: 1px;
+        width: 100%;
+        z-index: 2;
+    
+    }
+
+    .hero-text-container h1 {
+        font-size: 2em;
     }
 
     .text-container h2 {
@@ -518,18 +528,23 @@ body {
     }
 
     .hero-image-container {
-        display: contents;
+        display: flex;
+        justify-content: center;
+    
+        position: relative;
+        height: 70%;
+        width: 37%;
+        overflow: show;
 
     }
 
 
-
     .main-image {
         position: absolute;
-        top: 70%;
-        left: 70%;
+        top: 100%;
+        left: 90%;
         transform: translate(-50%, -50%);
-        width: 30%;
+        width: 100%;
         height: auto;
         max-width: 650px;
         border-radius: 8px;
