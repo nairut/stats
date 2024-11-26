@@ -3,3 +3,10 @@
   to = "https://magmatranslation.com/stats/:splat"
   status = 301
   force = true
+
+
+
+[[redirects]]
+  from = "/*"
+  to = "/pages/:splat/"
+  status = 200
