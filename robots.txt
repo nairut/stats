@@ -4,4 +4,4 @@ Disallow:
 
 
 
-Sitemap: https://magmatranslation.com/sitemap.xml
+Sitemap: https://magmatranslation.com/stats/sitemap-stats.xml
