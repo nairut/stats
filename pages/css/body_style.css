@@ -1,0 +1,362 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Main h2 container */
+.h2-main-container {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    height: auto;
+    padding: 20px;
+}
+
+/* Inner h2 container with box-shadow and styles */
+.h2-container {
+    border-radius: 7px;
+    box-shadow: rgba(123, 66, 255, 0.75) 0px 10px 50px -1.25px, rgba(123, 66, 255, 0.36) 0px 2.2px 11.4px -0.8px, rgba(123, 66, 255, 0.28) 0px 0.6px 3px -0.4px, rgba(255, 255, 255, 0.15) 0px 0px 0px 1.5px;
+    opacity: 1;
+    width: auto;
+    position: sticky;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    min-width: 300px;
+    max-width: 1200px;
+    height: auto; 
+    gap: 10px;
+    background-color: #ffffff;
+}
+
+/* h2 styles */
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+/* Section container */
+.section-container {
+    display: flex;
+    justify-content: center;
+    padding: 2px 2px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    align-items: center;
+    gap: 10%;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Text section */
+.text-container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 40%;
+    z-index: 1;
+}
+
+/* Container for h3 and p */
+.info-container {
+    margin-top: 1px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Apply the custom font styles to <p> */
+p {
+    font-family: "IBM Plex Sans", "IBM Plex Sans Placeholder", sans-serif;
+    font-size: 17px;
+    font-weight: 550;
+    text-align: justify;
+    color: #333;
+    line-height: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Image section with shadow */
+.image-container {
+    padding-left: 1px;
+    background-color: #ffffff;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    padding: 0;
+    width: 40%;
+    max-width: 750px;
+    box-shadow: rgba(33, 4, 102, 0.75) 4px 10px 9px -1.25px, rgba(21, 11, 46, 0.36) -4.8px -4.8px 2.4px -0.8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Image style */
+.image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-position: center;
+    object-fit: cover;
+    position: sticky;
+    max-width: 60%;
+    max-height: 60%;
+    border-radius: 3%;
+}
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+/* Main h2 container */
+.h2-main-container {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    height: auto;
+    padding: 20px;
+}
+
+/* Inner h2 container with box-shadow and styles */
+.h2-container {
+    border-radius: 7px;
+    box-shadow: rgba(123, 66, 255, 0.75) 0px 10px 50px -1.25px, rgba(123, 66, 255, 0.36) 0px 2.2px 11.4px -0.8px, rgba(123, 66, 255, 0.28) 0px 0.6px 3px -0.4px, rgba(255, 255, 255, 0.15) 0px 0px 0px 1.5px;
+    opacity: 1;
+    width: auto;
+    position: sticky;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    min-width: 300px;
+    max-width: 1200px;
+    height: auto; 
+    gap: 10px;
+    background-color: #ffffff;
+}
+
+/* h2 styles */
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+/* Section container */
+.section-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding: 2px 2px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    align-items: center;
+    gap: 10%;
+
+
+/* Text section */
+.text-container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 80%;
+    z-index: 1;
+}
+
+/* Container for h3 and p */
+.info-container {
+    margin-top: 1px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Apply the custom font styles to <p> */
+p {
+    font-family: "IBM Plex Sans", "IBM Plex Sans Placeholder", sans-serif;
+    font-size: 17px;
+    font-weight: 550;
+    text-align: justify;
+    color: #333;
+    line-height: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Image section with shadow */
+.image-container {
+    margin-top: 10px;
+    width: 80%;
+}
+
+/* Image style */
+.image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-position: center;
+    object-fit: cover;
+    position: sticky;
+    max-width: 60%;
+    max-height: 60%;
+    border-radius: 3%;
+}
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 168px) {
+    .section-container {
+        flex-direction: column;
+        margin: 0 5%;
+    }
+
+    .image-container {
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Conclusion styles */
+.conclusion-container {
+    text-align: center;
+    padding: 50px 200px;
+    background-color: #ffffff;
+    margin-top: 30px;
+    border-top: 0px solid #ccc;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto; /* Centers horizontally */
+    margin-right: auto; /* Centers horizontally */
+}
+
+.conclusion-container h2 {
+
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px; /* Added more space below the Conclusion title */
+}
+
+.conclusion-container p {
+
+    font-size: 18px;
+    line-height: 1.8em;
+    color: #333;
+}
+
+
+.footer-container {
+margin: auto;
+background-color: black;
+width: 100%;
+padding: 30px;
+
+}
+
+
+.footer-container .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    background-color: #000000;
+    max-width: 1200px;
+
+}
+
+.footer-container .column {
+
+    justify-content: left;
+    padding: 20px;
+
+
+
+}
+
+
+.footer-container p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.8em; 
+
+    
+}
+
+
+.footer-container .copyright {
+    color: white;
+    font-size: 12px;
+    line-height: 1.8em; 
+    margin-left: 13%;
+    
+}
+
+
+
+
+
+/* Style for links in the footer */
+.footer-container a {
+    color: #ffffff; /* Set the link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Ensure font size consistency */
+    line-height: 1.8em; /* Ensure consistent line height */
+}
+
+/* Hover effect for links */
+.footer-container a:hover {
+    color: #d3d3d3; /* Change the color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
