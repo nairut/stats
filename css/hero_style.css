@@ -480,9 +480,8 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+
         height: 100vh;
         
         background-size: cover;
@@ -501,8 +500,7 @@ body {
 
     .hero-inside-container {
 
-        display: flex;
-        justify-content: center;
+
         align-items: center;
         width: 100%;
    
@@ -530,8 +528,7 @@ body {
     }
 
     .hero-image-container {
-        display: flex;
-        justify-content: center;
+
     
         position: relative;
         height: 70%;
@@ -544,7 +541,7 @@ body {
     .main-image {
         position: absolute;
         top: 100%;
-        left: 90%;
+        left: 0%;
         transform: translate(-50%, -50%);
         width: 100%;
         height: auto;
