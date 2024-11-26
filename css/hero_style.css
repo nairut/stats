@@ -506,6 +506,15 @@ body {
     }
 
 
+    .hero-inside-container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+   
+    }
+
     .hero-text-container {
 
         border-radius: 1px;
