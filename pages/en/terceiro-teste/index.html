@@ -6,20 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Descubra as principais estatísticas do Instagram em 2024 e como elas podem impactar sua estratégia de marketing. Leia mais!">
         <meta name="author" content="Your Name or Company">
-        <title>Capai que tem um terceiro teste</title>
+        <title>Estatísticas do Instagram em 2024: O Que Saber</title>
         <!-- Canonical Link -->
         <link rel="canonical" href="https://magmatranslation.com/stats/en/terceiro-teste" />
         <!-- Link to External CSS (Relative path) -->
         
 <link rel="stylesheet" href="../../../css/hero_style.css">
-<link rel="stylesheet" href="../../../css/hero_style.css">
+<link rel="stylesheet" href="../../../css/body_style.css">
 
     </head>
     <body>
     <div class="hero-section">
         <!-- Fixed Navbar -->
-        <nav class="navbar">
-            <div class="inside-menu">
+        <nav class="navbar" id="pc-nav">
+            <div class="inside-menu"   >
                 <img src="https://res.cloudinary.com/dqza3l5hm/image/upload/v1732215678/logo-magma_euqt3y.svg" alt="Magma Logo" class="logo">
                 <ul class="menu">
                     <li><a href="#services">Services</a></li>
@@ -30,6 +30,34 @@
                 </ul>
             </div>
         </nav>
+
+
+<nav class="navbarmobile" id="navbarmobilescript">
+    <div class="inside-menu">
+        <img src="https://res.cloudinary.com/dqza3l5hm/image/upload/v1732215678/logo-magma_euqt3y.svg" alt="navbarmobile-logo" class="logo">
+        
+        <!-- Hamburger icon button -->
+        <button class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="menu" id="mobile-menu">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#industries">Industries</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#about-us">Linguists</a></li>
+            <li><a href="#contact-us" class="contact-btn">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
         
         <div class="hero-inside-container" id="heroInsideContainer">
             <div class="hero-text-container">
@@ -705,6 +733,42 @@
             imageContainer.style.transform = 'translateX(0px) scale(1)';
         });
     </script>
+
+
+  <script>
+// JavaScript to hide navbar on larger screens and show on smaller screens
+function toggleNavbarVisibility() {
+    const navbarPC = document.getElementById('pc-nav');
+    const navbarMobile = document.getElementById('navbarmobilescript');
+    
+    // Check if the window width is greater than 768px (for example, you can adjust it)
+    if (window.innerWidth > 360) {
+        // Show desktop navbar and hide mobile navbar
+        navbarPC.style.display = 'block';
+        navbarMobile.style.display = 'none';
+    } else {
+        // Show mobile navbar and hide desktop navbar
+        navbarPC.style.display = 'none';
+        navbarMobile.style.display = 'block';
+    }
+}
+
+// Run the function when the page loads
+window.addEventListener('load', toggleNavbarVisibility);
+
+// Run the function when the window is resized
+window.addEventListener('resize', toggleNavbarVisibility);
+
+
+// JavaScript to toggle mobile menu visibility
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('active');  // Toggle the 'active' class to show or hide the menu
+});
+
+
+</script>
+
 
     </body>
     </html>
