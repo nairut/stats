@@ -480,7 +480,17 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100vh;
+        
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 0px;
+        overflow: hidden;
     }
 
     .text-container {
