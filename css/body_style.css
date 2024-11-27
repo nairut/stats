@@ -391,4 +391,91 @@ padding: 30px;
     }
 
 
+
+
+
+
+    .footer-container {
+        margin: auto;
+        background-color: black;
+        width: 100%;
+        padding: 30px;
+        
+        }
+        
+        
+        .footer-container .content {
+            display: flex;
+            justify-content: center;
+            gap: 10%;
+            background-color: #000000;
+            max-width: 1200px;
+        
+        }
+        
+        .footer-container .column {
+        
+            justify-content: left;
+            padding: 20px;
+            min-width: 234px;
+        
+        
+        
+        }
+        
+        
+        .footer-container p {
+            color: white;
+            font-size: 16px;
+            line-height: 1.8em; 
+        
+            
+        }
+        
+        
+        .footer-container .copyright {
+            color: white;
+            font-size: 12px;
+            line-height: 1.8em; 
+            margin-left: 13%;
+            
+        }
+        
+        
+        
+        /* Style for links in the footer */
+        .footer-container a {
+            color: #ffffff; /* Set the link color */
+            text-decoration: none; /* Remove underline */
+            font-size: 16px; /* Ensure font size consistency */
+            line-height: 1.8em; /* Ensure consistent line height */
+        }
+        
+        /* Hover effect for links */
+        .footer-container a:hover {
+            color: #d3d3d3; /* Change the color on hover */
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
