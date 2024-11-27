@@ -17,8 +17,6 @@
 
 
 
-
-
 .hero-inside-container {
     background: linear-gradient(to bottom left, rgba(109, 78, 181, 0.459), #1530E1 60%);
     display: flex;
@@ -317,6 +315,63 @@ body {
 
 
 
+.inside-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.navbar .logo {
+    max-width: 150px;
+    margin-left: 5%;
+}
+
+
+
+
+.navbar .menu {
+    display: flex;
+    justify-content: space-around; /* Ensures space around each menu item */
+    align-items: center; /* Aligns items vertically in the center */
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0; /* Removes extra padding */
+    margin: 0; /* Removes extra margin */
+    width: 100%; /* Ensures it spans the full width */
+    max-width: 650px;
+}
+
+
+.navbar .menu li {
+    margin-right: 40x;
+}
+
+.navbar .menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+
+.navbar .menu li a:hover {
+    color: #f4a261;
+}
+
+.navbar .contact-btn {
+    padding: 10px 20px;
+    background-color: #A37500;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .contact-btn:hover {
+    background-color: #e76f51;
+}
+
+
+
 
 
 /* Style for the hamburger menu button */
@@ -358,49 +413,6 @@ body {
     gap: 15px;
 }
 
-/* Media query to show the hamburger menu on small screens */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;  /* Show the hamburger menu on small screens */
-    }
-
-    .navbarmobile .menu {
-        display: none;  /* Hide menu by default */
-        width: 100%;   /* Make menu take up full width */
-        position: absolute;
-        top: 50px;  /* Position it below the hamburger */
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.9); /* Dark background for the menu */
-        padding: 20px;
-        border-radius: 10px;
-    }
-
-    /* Menu links */
-    .navbarmobile .menu li {
-        margin-right: 0;
-    }
-
-    .navbarmobile .menu li a {
-        color: #fff;
-        font-size: 1.5em;
-    }
-
-    .navbarmobile .menu li a:hover {
-        color: #f4a261;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
 
 /* Fixed Navbar Styles */
 .navbarmobile {
@@ -432,58 +444,13 @@ body {
 
 
 
-.inside-menu {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 30%;
-}
-
-.navbar .logo {
-    max-width: 150px;
-}
-
-.navbar .menu {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-.navbar .menu li {
-    margin-right: 40px;
-}
-
-.navbar .menu li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight: lighter;
-    font-size: 1.2em;
-}
-
-.navbar .menu li a:hover {
-    color: #f4a261;
-}
-
-.navbar .contact-btn {
-    padding: 10px 20px;
-    background-color: #A37500;
-    color: white;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.navbar .contact-btn:hover {
-    background-color: #e76f51;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section {
         display: grid;
         justify-content: center;
-
-        height: 100vh;
+        
+        height: 90vh;
         
         background-size: cover;
         background-position: center;
@@ -500,11 +467,12 @@ body {
 
 
     .hero-inside-container {
-        height: 80vh;
+        height: 100vh;
         display: grid;
         justify-content: center;
         align-items: center;
         width: 100%;
+
    
     }
 
@@ -519,6 +487,7 @@ body {
 
     .hero-text-container h1 {
         font-size: 2em;
+        margin-top: 10%;
     }
 
     .text-container h2 {
@@ -542,7 +511,7 @@ body {
 
     .main-image {
         position: absolute;
-        top: 70%;
+        top: 50%;
 
         transform: translate(-50%, -50%);
         width: 70%;
@@ -551,4 +520,41 @@ body {
         border-radius: 8px;
         z-index: 2;
     }
+}
+
+
+
+
+
+/* Media query to show the hamburger menu on small screens */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;  /* Show the hamburger menu on small screens */
+    }
+
+    .navbarmobile .menu {
+        display: none;  /* Hide menu by default */
+        width: 100%;   /* Make menu take up full width */
+        position: absolute;
+        top: 50px;  /* Position it below the hamburger */
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9); /* Dark background for the menu */
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    /* Menu links */
+    .navbarmobile .menu li {
+        margin-right: 0;
+    }
+
+    .navbarmobile .menu li a {
+        color: #fff;
+        font-size: 1.5em;
+    }
+
+    .navbarmobile .menu li a:hover {
+        color: #f4a261;
+    }
+
 }
