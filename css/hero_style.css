@@ -442,10 +442,13 @@ body {
     gap: 30%;
 }
 
+.navbarmobile {
+    display: none;  /* Hide menu by default */
 
+}
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 790px) {
     .hero-section {
         display: grid;
         justify-content: center;
@@ -520,17 +523,26 @@ body {
         border-radius: 8px;
         z-index: 2;
     }
-}
 
 
 
-
-
-/* Media query to show the hamburger menu on small screens */
-@media (max-width: 768px) {
     .menu-toggle {
         display: flex;  /* Show the hamburger menu on small screens */
     }
+
+
+
+
+    .navbar {
+        display: none;  /* Hide menu by default */
+
+    }
+
+    .navbarmobile {
+        display: flex; /* Hide menu by default */
+
+    }
+
 
     .navbarmobile .menu {
         display: none;  /* Hide menu by default */
